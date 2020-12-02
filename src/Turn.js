@@ -13,14 +13,16 @@ class Turn {
   }
 
   evaluateGuess() {
-    return this.guess === card.correctAnswer
+    return this.guess === this.card.correctAnswer
   }
 
   giveFeedback() {
-    if (this.evaluateGuess) {
+    if (this.evaluateGuess()) {
       return 'correct!'
     } else {
       return 'incorrect!'
     }
   }
 }
+
+module.exports = Turn;
