@@ -46,5 +46,14 @@ describe('Round', function() {
     expect(round.calculatePercentCorrect()).to.deep.equal('50%');
   });
 
+  it('should display a message at the end of the round', function() {
+    round.turns = 0;
+    round.incorrectGuesses = [];
+    round.takeTurn('object');
+    expect(round.calculatePercentCorrect()).to.deep.equal('100%');
+    round.takeTurn('array');
+    expect(round.calculatePercentCorrect()).to.deep.equal('50%');
+  });
+
 
 });
