@@ -5,7 +5,7 @@
   "main": "index.js",
   "scripts": {
     "test": "mocha",
-    "lint": "./node_modules/.bin/eslint 'src/**.js' 'test/**.js'"
+    "lint": "eslint 'src/**.js' 'test/**.js'"
   },
   "keywords": [
     "oop",
@@ -22,5 +22,16 @@
   },
   "dependencies": {
     "inquirer": "^6.3.1"
-  }
+  },
+  "directories": {
+    "test": "test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/JeffKersting/flashcards-starter.git"
+  },
+  "bugs": {
+    "url": "https://github.com/JeffKersting/flashcards-starter/issues"
+  },
+  "homepage": "https://github.com/JeffKersting/flashcards-starter#readme"
 }
