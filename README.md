@@ -13,7 +13,8 @@ Flashcards runs in terminal:
 To install and run: `git clone` this repository from github. From within terminal, `cd` into the repository and run `node index.js`.
 
 ## Functionality
-![](.flashcard.gif)
+
+![](flashcard.gif)
 
 Users are able to begin the game, and run through the flashcard set from within terminal.
 
